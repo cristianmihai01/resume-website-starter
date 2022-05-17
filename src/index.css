@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-primary bg-body text-2xl;
+  }
+  .section {
+    @apply pt-[100px] pb-[0] lg:py-[100px];
+  }
+  .section-title {
+    @apply text-3xl lg:text-[65px] font-semibold leading-relaxed text-center;
+  }
+  .section-subtitle {
+    @apply max-w-[875px] mb-16 lg:mb-[120px] text-lg lg:text-xl text-center lg:mx-auto;
+  }
+  .dot {
+    @apply w-2 h-2 inline-block bg-accent rounded-full ml-2;
+  }
+  .btn {
+    @apply py-4 px-7 text-lg font-medium text-white flex items-center justify-center hover:bg-accent-hover transition-all shadow-xl cursor-pointer max-w-[260px];
+  }
+  .active {
+    @apply border-b-2 border-white transition-all;
+  }
+}
